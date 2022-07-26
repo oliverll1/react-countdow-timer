@@ -1,0 +1,15 @@
+@import '../../_variables.scss';
+
+.countdown-message {
+
+    &__container{
+        display: flex;
+        font-family: $roboto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__message-text {
+        font-style: italic;
+    }
+}

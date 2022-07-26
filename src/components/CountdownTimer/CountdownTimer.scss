@@ -1,0 +1,78 @@
+@import '../../_variables.scss';
+
+.media-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+        
+    }
+
+    25% {
+        opacity: 1;
+   
+    }
+
+    50% {
+        opacity: 0;
+        
+    }
+
+    100% {
+        opacity: 0;
+       
+    }
+}
+
+.countdown-timer {
+
+    &__container {
+        align-items: center;
+        display: flex;
+        flex-flow: row wrap;
+        font-family: $roboto;
+        justify-content: center;
+        margin-bottom: 1rem;
+        width: 100%;
+
+        @media (min-width: $breakpoint-desktop) {
+            padding-left: 3.5rem;
+        }
+    }
+
+    &__time {
+        color: $black;
+        font-size: 8rem;
+        font-weight: bold;
+        margin-right: 1rem;
+        width: 100%;
+        text-align: center;
+
+        &--red-text {
+            color: $red-darker;
+        }
+
+        &--blink {
+            animation: blink 0.5s linear infinite;
+        }
+
+
+        @media (min-width: $breakpoint-desktop) {
+            width: auto;
+        }
+    }
+
+    &__button--play {
+        @extend .media-button;
+    }
+
+    &__button--pause {
+        @extend .media-button;
+    }
+}

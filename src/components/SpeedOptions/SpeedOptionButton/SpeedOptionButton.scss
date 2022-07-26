@@ -1,0 +1,27 @@
+@import '../../../_variables.scss';
+
+
+.speed-option-button {
+    background-color: $white;
+    border: 2px solid $black-light;
+    border-radius: .1rem;
+    color: $black;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: $roboto;
+    font-size: .9rem;
+    height: 2.7rem;
+    margin: .1rem .2rem .7rem .2rem;
+    width: 4.5rem;
+
+    &:hover {
+        background-color: $black-light;
+        color:$white
+    }
+
+    &.active{
+        background-color: $black-light;
+        color:$white
+    }
+}
+

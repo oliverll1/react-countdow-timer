@@ -1,0 +1,27 @@
+@import '../../_variables.scss';
+
+.deployment-schedule{
+    &__container {
+        align-items: center;
+        display: flex;
+        flex-flow: column wrap;
+        font-family: $roboto;
+        justify-content: center;
+        margin-top: .5rem;
+        width: 100%;
+    }
+
+    &__label {
+        font-size: .75rem;
+        max-width: 350px;
+        width: 100%;
+    }
+
+    &__list {
+        display: flex;
+        flex-flow: column;
+        max-width: 350px;
+        padding-left: 0;
+        width: 100%;
+    }
+}
